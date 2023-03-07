@@ -15,7 +15,6 @@ node {
                         sh "git config user.email mentalmindgame7@gmail.com"
                         sh "git config user.name Abhi-bot-bot"
                         //sh "git switch master"
-                        sh "cd dev"
                         sh "cat app.yml"
                         sh "sed -i 's+public.ecr.aws/e4j0o0u9/ecr-demoing.*+public.ecr.aws/e4j0o0u9/ecr-demoing:${env.BUILD_NUMBER}+g' app.yml"
                         sh "cat app.yml"
